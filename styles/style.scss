@@ -1,0 +1,47 @@
+@import "./components/fonts";
+@import "./components/globals";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../static/images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  // height: 100vh;
+}
+
+.menu {
+  &__bar {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    margin: 0 auto;
+  }
+  &__list {
+    display: none;
+  }
+  &__btn {
+    background-color: transparent;
+    border: 0;
+  }
+  &__logo {
+    width: 45%;
+    height: auto;
+  }
+}
+
+.description {
+  padding: 23px;
+  margin: 115px auto 110px auto;
+  width: 85%;
+  border: 2px solid #ffffff;
+
+  &__text {
+    font-size: 2.3rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}

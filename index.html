@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Loopstudios landing page</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,73 +15,87 @@
   </style>
 </head>
 <body>
-  <header>
-    <div>
-      <button aria-label="menu">
-      <img src="./images/icon-hamburger.svg" alt="">
-      </button>
-      <nav>
-        <a href="#">About</a>
-        <a href="#">Careers</a>
-        <a href="#">Events</a>
-        <a href="#">Products</a>
-        <a href="#">Support</a>
+  <header class="header">
+    <div class="menu">
+      <div class="menu__bar">
+        <img class="menu__logo" src="./static/images/logo.svg" alt="">
+        <button class="menu__btn" aria-label="menu">
+          <img src="./static/images/icon-hamburger.svg" alt="">
+        </button>
+      </div>
+      <nav class="menu__list">
+        <a class="menu__item" href="#">About</a>
+        <a class="menu__item" href="#">Careers</a>
+        <a class="menu__item" href="#">Events</a>
+        <a class="menu__item" href="#">Products</a>
+        <a class="menu__item" href="#">Support</a>
       </nav>
     </div>
-      
-    <h1>
-    Immersive experiences that deliver
-    </h1>
+    
+    <div class="description">
+      <h1 class="description__text">
+      Immersive experiences that <br>deliver
+      </h1>
+    </div>
   </header>
 
   <main>
-    <h2>
-    The leader in interactive VR
-    </h2>
-  
-    <p>Founded in 2011, Loopstudios has been producing world-class virtual reality
-    projects for some of the best companies around the globe. Our award-winning
-    creations have transformed businesses through digital experiences that bind
-    to their brand.</p>
-  
-    <h2>
-    Our creations
-    </h2>
-  
-    <button>See all</button>
+    <section>
+      <h2>
+      The leader in interactive VR
+      </h2>
     
-    <div>
-      <img src="./images/mobile/image-deep-earth.jpg" alt="Deep earth">
-      <h3>Deep earth</h3>
-    </div>
-    <div>
-      <img src="./images/mobile/image-night-arcade.jpg" alt="Night arcade">
-      <h3>Night arcade</h3>
-    </div>
-    <div>
-      <img src="./images/mobile/image-soccer-team.jpg" alt="Soccer team VR">
-      <h3>Soccer team VR</h3>
-    </div>
-    <div>
-      <img src="./images/mobile/image-grid.jpg" alt="">
-      <h3>The grid</h3>
-    </div>
-    <div>
-      <img src="./images/mobile/image-from-above.jpg" alt="">
-      <h3>From up above VR</h3>
-    </div>
-    <div>
-      <img src="./images/mobile/image-pocket-borealis.jpg" alt="">
-      <h3>Pocket borealis</h3>
-    </div>
-    <div>
-      <img src="./images/mobile/image-curiosity.jpg" alt="">
-      <h3>The curiosity</h3>
-    </div>
-    <div>
-      <img src="./images/mobile/image-fisheye.jpg" alt="">
-      <h3>Make it fisheye</h3>
-    </div>
+      <p>Founded in 2011, Loopstudios has been producing world-class virtual reality
+      projects for some of the best companies around the globe. Our award-winning
+      creations have transformed businesses through digital experiences that bind
+      to their brand.</p>
+    </section>
+      
+    <section>
+      <h2>
+      Our creations
+      </h2>
+    
+      <button>See all</button>
+      
+
+      <div class="image-1">
+        <picture>
+          <!-- <source media="(max-width: 799px)" srcset="./static/images/mobile/image-deep-earth.jpg">
+          <source media="(min-width: 800px)" srcset="./static/images/desktop/image-deep-earth.jpg">
+          <img src="./static/images/mobile/image-deep-earth.jpg" alt="">
+        </picture> -->
+        <h3>Deep earth</h3>
+      </div>
+      <div>
+        <img src="./static/images/desktop/image-night-arcade.jpg" alt="Night arcade">
+        <h3>Night arcade</h3>
+      </div>
+      <div>
+        <img src="./static/images/desktop/image-soccer-team.jpg" alt="Soccer team VR">
+        <h3>Soccer team VR</h3>
+      </div>
+      <div>
+        <img src="./static/images/desktop/image-grid.jpg" alt="">
+        <h3>The grid</h3>
+      </div>
+      <div>
+        <img src="./static/images/desktop/image-from-above.jpg" alt="">
+        <h3>From up above VR</h3>
+      </div>
+      <div>
+        <img src="./static/images/desktop/image-pocket-borealis.jpg" alt="">
+        <h3>Pocket borealis</h3>
+      </div>
+      <div>
+        <img src="./static/images/desktop/image-curiosity.jpg" alt="">
+        <h3>The curiosity</h3>
+      </div>
+      <div>
+        <img src="./static/images/desktop/image-fisheye.jpg" alt="">
+        <h3>Make it fisheye</h3>
+      </div>
+    </section>
   </main>
 
   <footer>
